@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Paper Scissors - Cute Baby Theme</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video autoplay muted loop playsinline id="bg-video">
+  <source src="./img/bg25.mp4" type="video/mp4">
+</video>
+
+  <!-- Floating Baby Icons -->
+  <div class="floating-icon" style="top:20px; left:30px;">🧸</div>
+  <div class="floating-icon" style="top:80px; right:40px; animation-delay:1s;">🍼</div>
+  <div class="floating-icon" style="bottom:60px; left:50px; animation-delay:2s;">🐥</div>
+  <div class="floating-icon" style="bottom:30px; right:70px; animation-delay:3s;">🎀</div>
+
+  <div class="game-container">
+    <h1>Rock Paper Scissors</h1>
+    <div class="choices">
+      <button class="choice" data-choice="rock">🧸</button>
+      <button class="choice" data-choice="paper">🍼</button>
+      <button class="choice" data-choice="scissors">🐥</button>
+    </div>
+    <div id="result" aria-live="polite"></div>
+    <div id="score">Player: 0 | Computer: 0</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
